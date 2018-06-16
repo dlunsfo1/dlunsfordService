@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var api = require('./api/api');
 var config = require('./config/config');
-//require('mongoose').connect('database:27017/dlunsfordServiceDev'); // used for docker compose
 
+//require('mongoose').connect('database:27017/dlunsfordServiceDev'); // used for docker compose
 require('mongoose').connect(process.env.DB_URI);
 
 // require('mongoose').connect(
@@ -12,7 +12,6 @@ require('mongoose').connect(process.env.DB_URI);
 // );
 
 //setup middlware from a single point
-
 require('./middleware/middleware')(app);
 
 // APIs
