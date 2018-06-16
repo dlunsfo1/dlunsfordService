@@ -19,7 +19,7 @@ exports.params = function(req, res, next, id) {
 
 exports.get = function(req, res, next) {
   User.find({})
-    .limit(1000)
+    .limit(20)
     .then(
       function(users) {
         res.json(users);
