@@ -66,5 +66,6 @@ config.js
 development.js
 data_gen/
 data/
-
+.env
+test
 scratchpad.js
