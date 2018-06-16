@@ -18,7 +18,8 @@ exports.params = function(req, res, next, id) {
 
 exports.get = function(req, res, next) {
   Ticket.find({})
-    .populate({ path: 'author', select: 'username' }) /// messages
+    .populate({ path: 'author', select: 'username' })
+    .limit(20) /// messages
     .exec()
     .then(
       function(tickets) {

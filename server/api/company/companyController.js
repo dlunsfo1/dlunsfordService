@@ -19,7 +19,7 @@ exports.params = function(req, res, next, id) {
 
 exports.get = function(req, res, next) {
   Company.find({})
-    .limit(5000)
+    .limit(20)
     .then(
       function(companyies) {
         res.json(companyies);
