@@ -69,3 +69,6 @@ data/
 .env
 test
 scratchpad.js
+npm-debug.log
+.DS_Store
+/*.env
