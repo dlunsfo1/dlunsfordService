@@ -1,6 +1,6 @@
 {
   "name": "dlunsfordService",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-jest": "^21.17.0",
     "express": "^4.16.3",
