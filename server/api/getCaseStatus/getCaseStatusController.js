@@ -5,6 +5,7 @@ exports.params = function(req, res, next, id) {
   Ticket.findById(id)
     .select('title')
     .populate('message')
+    .limit(20) // limiting by 20 TODO: Pagination
     .exec()
     .then(function(ticket) {
       if (!ticket) {
