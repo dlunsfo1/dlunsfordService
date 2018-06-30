@@ -5,7 +5,8 @@ var CompanySchema = new Schema({
   companyname: {
     type: String,
     required: true
-  }
+  },
+  score: { type: Number }
 });
 
 module.exports = mongoose.model('company', CompanySchema);
